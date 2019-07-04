@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>UXI.Filters</id>
+    <version>1.0.0</version>
+    <title>UXI.Filters</title>
+    <authors>martinkonopka uxifiit</authors>
+    <owners>uxifiit</owners>
+    <projectUrl>https://github.com/uxifiit/Filters</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <repository type="git" url="https://github.com/uxifiit/Filters" branch="$branch$" commit="$commit$" />
+    <description>Framework for console applications for data filtering.</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright (c) 2019 Martin Konopka and Faculty of Informatics and Information Technologies, Slovak University of Technology in Bratislava</copyright>
+    <tags>filter data host</tags>
+    <dependencies>
+      <dependency id="CommandLineParser" version="2.3.0" />
+      <dependency id="CsvHelper" version="9.2.3" />
+      <dependency id="Newtonsoft.Json" version="11.0.2" />
+      <dependency id="System.Reactive" version="3.1.1" />
+      <dependency id="UXI.Serialization" version="2.0.0" />
+      <dependency id="UXI.Serialization.Reactive" version="2.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\src\UXI.Filters\bin\$configuration$\UXI.Filters.dll" target="lib\net45" />
+    <file src="..\LICENSE.txt" target="" />
+  </files>
+</package>
