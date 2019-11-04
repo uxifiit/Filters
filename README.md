@@ -1,4 +1,5 @@
 # UXIsk Filters Framework
+[![Build Status](https://dev.azure.com/uxifiit/UXI.Libs/_apis/build/status/uxifiit.Filters?branchName=master)](https://dev.azure.com/uxifiit/UXI.Libs/_build/latest?definitionId=5&branchName=master) [![UXI.Filters package in Public feed in Azure Artifacts](https://feeds.dev.azure.com/uxifiit/875e4574-b18a-49ff-8cf1-55b220af2355/_apis/public/Packaging/Feeds/f25beb4b-f7d5-4466-9073-a54052469941/Packages/21845bb6-14f0-42d8-bfdf-8d29c38510fe/Badge)](https://dev.azure.com/uxifiit/UXI.Libs/_packaging?_a=package&feed=f25beb4b-f7d5-4466-9073-a54052469941&package=21845bb6-14f0-42d8-bfdf-8d29c38510fe&preferRelease=true)
 
 UXI.Filters is a framework for developing console applications for data filtering and processing. UXI.Filters belongs to the common libraries in [UXI.Libs](https://github.com/uxifiit/UXI.Libs).
 
