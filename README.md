@@ -1,4 +1,4 @@
-# Filters
+# UXIsk Filters Framework
 
 UXI.Filters is a framework for developing console applications for data filtering and processing. UXI.Filters belongs to the common libraries in [UXI.Libs](https://github.com/uxifiit/UXI.Libs).
 
