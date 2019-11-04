@@ -1,6 +1,6 @@
 # Filters
 
-UXI.Filters is a framework for developing console applications for data filtering and processing.
+UXI.Filters is a framework for developing console applications for data filtering and processing. UXI.Filters belongs to the common libraries in [UXI.Libs](https://github.com/uxifiit/UXI.Libs).
 
 Main features:
 * Simplifies wrapping a data filtering function into a command line application.
@@ -53,18 +53,18 @@ Timestamp formats are defined as a command line argument in the form of `(type)(
 
 ## Installation
 
-UXI.Filters is available as a NuGet package in a public Azure DevOps artifacts repository:
+UXI.Filters is available as a NuGet package in a public Azure DevOps artifacts repository shared with [UXI.Libs](https://github.com/uxifiit/UXI.Libs):
 ```
 https://pkgs.dev.azure.com/uxifiit/UXI.Libs/_packaging/Public/nuget/v3/index.json
 ```
 
 
-### Add uxifiit/UXI.Filters package source
+### Add uxifiit/UXI.Libs package source
 First, add a new package source to the solution or Visual Studio. Choose the way that fits you the best:
 * Add new package source in [Visual Studio settings](https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/consume?view=azure-devops).
 * Add new package source with the repository URL through command line:
 ```
-nuget source Add -Name "UXI.Filters Public Feed" -Source "https://pkgs.dev.azure.com/uxifiit/UXI.Filters/_packaging/Public/nuget/v3/index.json"
+nuget source Add -Name "UXI.Libs Public Feed" -Source "https://pkgs.dev.azure.com/uxifiit/UXI.Libs/_packaging/Public/nuget/v3/index.json"
 ```
 * Create `NuGet.config` file in your project's solution directory where you specify this package source:
 
@@ -72,7 +72,7 @@ nuget source Add -Name "UXI.Filters Public Feed" -Source "https://pkgs.dev.azure
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <packageSources>
-    <add key="UXI.Filters Public Feed" value="https://pkgs.dev.azure.com/uxifiit/UXI.Filters/_packaging/Public/nuget/v3/index.json" />
+    <add key="UXI.Libs Public Feed" value="https://pkgs.dev.azure.com/uxifiit/UXI.Libs/_packaging/Public/nuget/v3/index.json" />
   </packageSources>
   <disabledPackageSources />
 </configuration>
@@ -94,7 +94,7 @@ Use [Issues](issues) to request features, report bugs, or discuss ideas.
 
 ## Dependencies
 
-* [UXI.Serialization](https://github.com/uxifiit/UXI.Libs)
+* [UXI.Serialization](https://github.com/uxifiit/UXI.Serialization)
 * [Rx.NET](https://github.com/Reactive-Extensions/Rx.NET)
 * [Json.NET](https://github.com/JamesNK/Newtonsoft.Json)
 * [CsvHelper](https://github.com/JoshClose/CsvHelper)
