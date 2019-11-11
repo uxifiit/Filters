@@ -78,9 +78,9 @@ nuget source Add -Name "UXIsk Packages" -Source "https://pkgs.dev.azure.com/uxif
 </configuration>
 ```
 
-### Install UXI.Libs packages
+### Install packages
 
-Then install the packages to your project using the Visual Studio "Manage NuGet Packages..." window or use the Package Manager Console:
+Use the Visual Studio "Manage NuGet Packages..." window or the Package Manager Console:
 ```
 PM> Install-Package UXI.Filters
 ```
