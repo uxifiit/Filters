@@ -19,7 +19,7 @@ namespace UXI.Filters.Configuration
                    .Configurations
                    .Add
                    (
-                       new RelaySerializationConfiguration<Newtonsoft.Json.JsonSerializer>((serializer, access, _) =>
+                       new RelaySerializationConfiguration<Newtonsoft.Json.JsonSerializer>((serializer, access, _, __) =>
                        {
                            if (access == DataAccess.Write)
                            {

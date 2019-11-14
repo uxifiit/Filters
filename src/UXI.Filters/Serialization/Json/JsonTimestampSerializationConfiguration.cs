@@ -22,7 +22,7 @@ namespace UXI.Filters.Serialization.Json
         public ITimestampStringConverter Converter { get; set; }
 
 
-        protected override JsonSerializer Configure(JsonSerializer serializer, DataAccess access, object settings)
+        protected override JsonSerializer Configure(JsonSerializer serializer, DataAccess access, Type dataType, object settings)
         {
             SetupDateTimeOffsetSerialization(serializer, Converter);
 

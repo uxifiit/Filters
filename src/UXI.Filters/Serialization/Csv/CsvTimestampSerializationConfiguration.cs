@@ -23,7 +23,7 @@ namespace UXI.Filters.Serialization.Csv
         public ITimestampStringConverter TimestampConverter { get; }
 
 
-        protected override CsvSerializerContext Configure(CsvSerializerContext serializer, DataAccess access, object settings)
+        protected override CsvSerializerContext Configure(CsvSerializerContext serializer, DataAccess access, Type dataType, object settings)
         {
             SetupDateTimeOffsetSerialization(serializer, TimestampConverter);
 
