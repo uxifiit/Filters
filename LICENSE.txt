@@ -1,4 +1,4 @@
-Copyright (c) 2019 Martin Konopka and Faculty of Informatics and Information Technologies, Slovak University of Technology in Bratislava.
+Copyright (c) 2020 Martin Konopka
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
