@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UXI.Filters.Common;
 using UXI.Filters.Exceptions;
 
 namespace UXI.Filters
@@ -101,15 +102,13 @@ namespace UXI.Filters
         }
 
 
-        private static void EnsureCanConnect(Type source, Type sourceDataType, Type target, Type targetDataType)
+        private static void EnsureCanConnect(Type sourceFilter, Type sourceOutputDataType, Type targetFilter, Type targetInputDataType)
         {
-            bool canAssign = sourceDataType == targetDataType
-                             || sourceDataType.IsSubclassOf(targetDataType)
-                             || targetDataType.IsAssignableFrom(sourceDataType);
+            bool canAssign = TypeCompatibilityHelper.CanAssign(sourceOutputDataType, targetInputDataType);
 
             if (canAssign == false)
             {
-                throw new FilterTypeMismatchException($"Mismatch in data types between filters [{source.FullName}] and [{target.FullName}]: Source type [{sourceDataType.FullName}] does not match the expected type [{targetDataType.FullName}].");
+                throw new FilterTypeMismatchException($"Mismatch in data types between filters [{sourceFilter.FullName}] and [{targetFilter.FullName}]: Source type [{sourceOutputDataType.FullName}] does not match the expected type [{targetInputDataType.FullName}].");
             }
         }
     }

@@ -78,6 +78,7 @@
     <Compile Include="Common\Extensions\FileFormatEx.cs" />
     <Compile Include="Common\Extensions\IEnumerableEx.cs" />
     <Compile Include="Common\FileHelper.cs" />
+    <Compile Include="Common\TypeHelper.cs" />
     <Compile Include="Configuration\FilterConfigurationAttribute.cs" />
     <Compile Include="Configuration\FilterConfigurationCollection.cs" />
     <Compile Include="Configuration\IndentedJsonOutputFormattingConfiguration.cs" />
